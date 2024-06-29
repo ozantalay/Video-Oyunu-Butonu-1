@@ -4,6 +4,10 @@ import { useState } from "react";
 export default function App() {
   const [gameRunning, setGameRunning] = useState(false);
 
+    const btnFunc=()=>{
+
+      setGameRunning(gameRunning?"play":false);
+    }
   /* Challenge
   
     Kullanıcının bir video oyununu oynatmasını ve duraklatmasını sağlayacak buton oluşturuyorsunuz. Göreviniz bunu ayarlamak ve aşağıdaki div'e (satır 26) aşağıdaki gibi yerleştirmektir: 
@@ -23,5 +27,7 @@ export default function App() {
              
         4. Bu görevleri doğru bir şekilde tamamlarsanız, butona tıkladığınızda bazı güzel görsel efektlere sahip olmalı ve çalışmamızın arka planı otomatik olarak açık mavi bir arka planla değiştirilmelidir.
 */
-  return <div></div>;
+  return <div>
+    <button className="video-game-button" ></button>
+  </div>;
 }
